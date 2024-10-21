@@ -1,0 +1,131 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Pacifico&display=swap');
+
+/* Centered name at the top */
+.absolute-center {
+  position: absolute; 
+  top: 0; /* Position at the very top of the screen */
+  left: 50%; 
+  transform: translate(-50%, 0); /* Center horizontally */
+  z-index: 3000; /* Ensure it appears above the navbar */
+  color: #2c3e50; /* Dark blue color */
+  padding: 5px 10px; /* Optional: Add padding for aesthetics */
+  font-family: 'Pacifico', cursive; /* Use the imported Google Font */
+  font-size: 2.25rem; /* Adjust size as needed */
+}
+
+/* Navbar styles */
+.navbar {
+  height: 150px;
+  width: 100%;
+  background-color: #ecf0f1; /* Light grey background */
+  z-index: 1; /* Ensure the navbar is behind the name */
+  transition: background-color 0.5s ease; /* Smooth transition for background color */
+}
+
+.navbar:hover {
+  background-color: #bdc3c7; /* Change to a slightly darker grey on hover */
+}
+
+/* Animated text */
+.animated-text {
+  opacity: 0; /* Initially hidden */
+  animation: fadeIn 0.5s forwards; /* Fade-in animation */
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0; /* Start fully transparent */
+  }
+  100% {
+    opacity: 1; /* Fade to fully visible */
+  }
+}
+
+/* Developer image styles */
+.developer-image-container {
+  /* display: flex; */
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px; /* Adjust as needed */
+}
+
+.developer-image {
+  width: 350px; /* Adjust size as needed */
+  height: auto;
+  border-radius: 15%; /* Make the image circular */
+  border: 2px solid #2c3e50; /* Dark blue border */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+  opacity: 0; /* Initially hidden */
+  animation: fadeInImage 1s forwards; /* Fade-in animation for the image */
+}
+
+@keyframes fadeInImage {
+  0% {
+    opacity: 0; /* Start fully transparent */
+  }
+  100% {
+    opacity: 1; /* Fade to fully visible */
+  }
+}
+
+/* Custom button styles */
+.custom-btn {
+  font-family: 'Roboto', sans-serif; /* Use a clean, modern font */
+  font-size: 1rem; /* Adjust size as needed */
+  padding: 10px 20px; /* Adjust padding as needed */
+  margin: 5px; /* Add margin between buttons */
+  border-radius: 25px; /* Rounded corners */
+  transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition for hover effects */
+  background-color: #2c3e50; /* Dark blue color */
+  color: #fff; /* White text color */
+  border: none; /* Remove border */
+}
+
+.custom-btn:hover {
+  background-color: #1a242f; /* Darker blue on hover */
+  color: #fff; /* Keep text color white */
+}
+
+/* Page background and general styles */
+body {
+  background-color: #ecf0f1; /* Light grey background color */
+  font-family: 'Roboto', sans-serif; /* Use a clean, modern font */
+  color: #2c3e50; /* Dark blue text color */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container-fluid {
+  padding: 20px; /* Add padding to the container */
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Pacifico', cursive; /* Use the imported Google Font for headings */
+  color: #2c3e50; /* Dark blue text color */
+}
+
+p {
+  font-family: 'Roboto', sans-serif; /* Use a clean, modern font for paragraphs */
+  color: #2c3e50; /* Dark blue text color */
+}
+
+/* Centered About Me section */
+.about-me-container {
+  text-align: center;
+  margin-top: 40px; /* Adjust as needed */
+}
+
+.about-me-title {
+  font-size: 3rem; /* Larger title */
+  color: #2c3e50; /* Dark blue color */
+  font-family: 'Pacifico', cursive; /* Use the imported Google Font */
+}
+
+.about-me-text {
+  font-size: 1.25rem; /* Adjust size as needed */
+  color: #2c3e50; /* Dark blue color */
+  font-family: 'Roboto', sans-serif; /* Use the imported Google Font */
+  margin-top: 20px; /* Adjust as needed */
+}
