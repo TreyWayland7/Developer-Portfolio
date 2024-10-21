@@ -1,0 +1,32 @@
+/* AboutMe.css */
+.about-me1 {
+    text-align: center;
+}
+
+.dev-photo {
+    display: block;
+    margin: 0 auto;
+    border-radius: 15%;
+    width: 450px; /* Adjust size as needed */
+    margin-top: 20px;
+    object-fit: cover;
+    opacity: 0; /* Start with the image hidden */
+    animation: fadeIn 2s forwards; /* Apply the fade-in animation */
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1; /* End with the image fully visible */
+    }
+}
+
+
+.about-me1 p {
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
+    padding: 20px;
+    border-radius: 10px;
+    display: inline-block;
+    max-width: 600px;
+    margin: 20px auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
