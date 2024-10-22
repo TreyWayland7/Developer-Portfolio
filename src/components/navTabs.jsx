@@ -7,10 +7,11 @@ import './navTabs.css';
 
 function NavTabs() {
   const [displayedName, setDisplayedName] = useState('');
-  const fullName = "Trrey Wayland";
+  const fullName = "TTrey Wayland";
 
   useEffect(() => {
     let index = 0;
+    setDisplayedName('');
 
     const interval = setInterval(() => {
       if (index < fullName.length - 1) {
@@ -19,7 +20,7 @@ function NavTabs() {
       } else {
         clearInterval(interval); // Stop the interval when done
       }
-    }, 200); // Adjust the speed of the animation by changing the interval (in milliseconds)
+    }, 100); // Adjust the speed of the animation by changing the interval (in milliseconds)
 
     return () => clearInterval(interval); // Cleanup the interval on component unmount
   }, []);
@@ -41,10 +42,10 @@ function NavTabs() {
             <Nav.Link href="contact" className="custom-btn mx-1">
               Contact
             </Nav.Link>
-            <Nav.Link href="#portfolio" className="custom-btn mx-1">
+            <Nav.Link href="portfolio" className="custom-btn mx-1">
               Portfolio
             </Nav.Link>
-            <Nav.Link href="#resume" className="custom-btn mx-1">
+            <Nav.Link href="Resume" className="custom-btn mx-1">
               Resume
             </Nav.Link>
           </Nav>
