@@ -35,18 +35,18 @@ function NavTabs() {
 
           {/* Buttons on the right */}
           <Nav className="ms-auto">
-            <Button className="custom-btn mx-1">
+          <Nav.Link href="about-me" className="custom-btn mx-1">
               About Me
-            </Button>
-            <Button className="custom-btn mx-1">
+            </Nav.Link>
+            <Nav.Link href="contact" className="custom-btn mx-1">
               Contact
-            </Button>
-            <Button className="custom-btn mx-1">
+            </Nav.Link>
+            <Nav.Link href="#portfolio" className="custom-btn mx-1">
               Portfolio
-            </Button>
-            <Button className="custom-btn mx-1">
+            </Nav.Link>
+            <Nav.Link href="#resume" className="custom-btn mx-1">
               Resume
-            </Button>
+            </Nav.Link>
           </Nav>
         </Container>
       </Navbar>
